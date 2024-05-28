@@ -6,8 +6,7 @@
     flex-direction: column;
     justify-content: flex-end; /* Align content to the bottom */
     padding-left: 100px; /* Adjust left padding */
-    padding-bottom: 50px;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
   
   .hero-container > h1 {
