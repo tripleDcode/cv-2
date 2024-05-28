@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import '../components/tablethero.css'
-import '../App.css'
 import { lockScroll, unlockScroll } from '../components/lockscroll';
 
 function TabletHero() {
