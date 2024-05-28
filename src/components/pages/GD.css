@@ -1,0 +1,50 @@
+.gd-container {
+    position: relative; /* Positioning context for absolutely positioned elements */
+    height: calc(100vh - 200px); /* Adjusted height to leave space for footer */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    padding-bottom: 50px;
+    margin-bottom: 45px;
+  }
+  
+  .gd-container > h1 {
+    color: black;
+    font-size: 48px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-left: 100px;
+    margin-top: 150px;
+  }
+  
+  .gd-container > p {
+    margin-top: 8px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins';
+    margin-left: 100px;
+  }
+  
+  .graphoto-holder {
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    bottom: 0; /* Align at the bottom */
+    position: absolute;
+    overflow: hidden;
+  }
+
+
+.graphoto-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+    object-fit: cover;
+    margin-right: 20px;
+}

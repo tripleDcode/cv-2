@@ -1,0 +1,35 @@
+/* src/Sidebar.css */
+* {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #111;
+    padding-top: 60px;
+    transition: 0.3s;
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center;
+  text-decoration: none;
+  }
+
+  .logo {
+    color: inherit;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 15px;
+    z-index: 1;
+  }
+  
+
+  

@@ -1,0 +1,13 @@
+.footer-container {
+    background-color: #242424;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: transform 1s ease-in-out; /* Transition effect */
+}
+
+.show {
+    transform: translateY(0); /* Move to final position */
+}
