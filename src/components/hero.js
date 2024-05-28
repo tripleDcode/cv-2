@@ -1,16 +1,8 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import '../components/hero.css'
-import { lockScroll, unlockScroll } from '../components/lockscroll';
 
 function Hero() {
-  useEffect(() => {
-    lockScroll();
-
-    return () => {
-      unlockScroll();
-    };
-  }, []);
 
   return (
     <>

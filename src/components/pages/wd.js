@@ -2,18 +2,12 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import '../pages/WD.css'
 import '../../App.css'
-import { lockScroll, unlockScroll } from '../lockscroll';
+
 
 
 
 function WD() {
-  useEffect(() => {
-    lockScroll();
 
-    return () => {
-      unlockScroll();
-    };
-  }, []);
   return (
     <>
         <div className='wd-container'>
