@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../pages/GD.css'
-import '/Users/dandavies/Documents/Projects/cv-2/src/App.css'
+import '../../App.css'
 
 function GD() {
   return (

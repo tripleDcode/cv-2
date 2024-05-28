@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../pages/dm.css'
-import '/Users/dandavies/Documents/Projects/cv-2/src/App.css'
+import '../../App.css'
 
 function DM() {
   return (
