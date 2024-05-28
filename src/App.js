@@ -8,6 +8,7 @@ import WD from './components/pages/wd';
 import GD from './components/pages/GD';
 import MD from './components/pages/MD'
 import TabletSite from './components/TabletSite'
+import '../src/App.css'
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
