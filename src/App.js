@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
 import Hero from './components/hero';
 import DM from './components/pages/dm';
 import WD from './components/pages/wd';
@@ -23,6 +21,19 @@ function App() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  function setVh() {
+    // Get the viewport height and set it as a CSS custom property
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  
+  // Call the function initially
+  setVh();
+  
+  // Recalculate the value on resize
+  window.addEventListener('resize', setVh);
+  
 
   return (
     <>
