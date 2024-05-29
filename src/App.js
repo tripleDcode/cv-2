@@ -34,7 +34,7 @@ function App() {
         </Router>
       ) : (
         <Router>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
             <Route path="/" exact element={<Hero />} />
             <Route path="/digital-marketing" exact element={<DM />} />
@@ -42,7 +42,7 @@ function App() {
             <Route path="/graphic-design" exact element={<GD />} />
             <Route path="/motion-design" exact element={<MD />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
       )}
     </>
