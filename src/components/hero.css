@@ -1,9 +1,9 @@
 .hero-container {
-    position: relative; /* Positioning context for absolutely positioned elements */
-    height: calc(var(--vh, 1vh) * 100);
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: flex-end; /* Align content to the bottom */
+  position: relative;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
   }
 
   .hero-content {

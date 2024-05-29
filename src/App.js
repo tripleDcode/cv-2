@@ -13,6 +13,7 @@ function App() {
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
+      setVh(); // Update vh variable on resize
     };
 
     window.addEventListener('resize', handleResize);
@@ -23,16 +24,14 @@ function App() {
   }, []);
 
   function setVh() {
-    // Get the viewport height and set it as a CSS custom property
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
-  
+
   // Call the function initially
-  setVh();
-  
-  // Recalculate the value on resize
-  window.addEventListener('resize', setVh);
+  useEffect(() => {
+    setVh();
+  }, []);
   
 
   return (

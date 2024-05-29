@@ -4,7 +4,6 @@
   padding: 0;
   font-family: 'Poppins';
   outline: 1px solid red;
-  --vh: 100%;
 }
 
 body, html, #root {
