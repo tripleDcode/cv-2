@@ -4,12 +4,13 @@ import Hero from './components/hero';
 import DM from './components/pages/dm';
 import WD from './components/pages/wd';
 import GD from './components/pages/GD';
-import MD from './components/pages/MD'
-import TabletSite from './components/TabletSite'
+import MD from './components/pages/MD';
+import TabletSite from './components/TabletSite';
 import TabletWD from './components/TabletWD';
 import TabletMD from './components/TabletMD';
 import TabletGD from './components/TabletGD';
 import TabletDM from './components/TabletDM';
+import MobileSite from './components/MobileSite';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -36,33 +37,32 @@ function App() {
   useEffect(() => {
     setVh();
   }, []);
-  
 
   return (
     <>
-      {windowWidth <= 975 ? (
-        <Router>
+      <Router>
         <Routes>
-          <Route path='/' exact element={<TabletSite />}></Route>
-          <Route path='/web-design' exact element={<TabletWD />}></Route>
-          <Route path='/motion-design' exact element={<TabletMD />}></Route>
-          <Route path='/graphic-design' exact element={<TabletGD />}></Route>
-          <Route path='/digital-marketing' exact element={<TabletDM />}></Route>
+          {windowWidth <= 550 ? (
+            <Route path='/' exact element={<MobileSite />} />
+          ) : windowWidth <= 975 ? (
+            <>
+              <Route path='/' exact element={<TabletSite />} />
+              <Route path='/web-design' exact element={<TabletWD />} />
+              <Route path='/motion-design' exact element={<TabletMD />} />
+              <Route path='/graphic-design' exact element={<TabletGD />} />
+              <Route path='/digital-marketing' exact element={<TabletDM />} />
+            </>
+          ) : (
+            <>
+              <Route path="/" exact element={<Hero />} />
+              <Route path="/digital-marketing" exact element={<DM />} />
+              <Route path="/web-design" exact element={<WD />} />
+              <Route path="/graphic-design" exact element={<GD />} />
+              <Route path="/motion-design" exact element={<MD />} />
+            </>
+          )}
         </Routes>
-        </Router>
-      ) : (
-        <Router>
-          {/* <Navbar /> */}
-          <Routes>
-            <Route path="/" exact element={<Hero />} />
-            <Route path="/digital-marketing" exact element={<DM />} />
-            <Route path="/web-design" exact element={<WD />} />
-            <Route path="/graphic-design" exact element={<GD />} />
-            <Route path="/motion-design" exact element={<MD />} />
-          </Routes>
-          {/* <Footer /> */}
-        </Router>
-      )}
+      </Router>
     </>
   );
 }
