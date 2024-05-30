@@ -1,0 +1,19 @@
+.mobile-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0; /* Simplified padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure it spans the full width */
+    bottom: 0;
+}
+
+.mobile-container.show {
+    transform: translateY(0) !important; /* Move to final position */
+  }
+  
+.mobile-container.animate {
+    transition: transform 1s ease-in-out; /* Transition effect */
+    transform: translateY(100%);
+  }

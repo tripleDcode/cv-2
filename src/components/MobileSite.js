@@ -1,12 +1,14 @@
-import React from 'react';
-import MobileHero from './mobilehero';
+import React from 'react'
+import MobileHero from './mobilehero'
+import MobileMenu from './mobilemenu'
 
 function MobileSite() {
   return (
-    <>
-      <MobileHero />
-    </>
-  );
+<>
+    <MobileHero />
+    <MobileMenu animate={true}/>
+</>
+  )
 }
 
-export default MobileSite;
+export default MobileSite
