@@ -23,7 +23,7 @@ const SideMenu = () => {
     <Link to='/graphic-design'>
       <Button className="sbtns" buttonStyle='sbtn--3'>GRAPHIC DESIGN</Button>
       </Link>
-    <Link>
+    <Link to='/motion-design'>
       <Button className="sbtns" buttonStyle='sbtn--4'>MOTION DESIGN</Button>
     </Link>
     </div>

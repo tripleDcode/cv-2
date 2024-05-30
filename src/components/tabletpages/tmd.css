@@ -1,0 +1,43 @@
+.tmd-container {
+    position: relative; /* Positioning context for absolutely positioned elements */
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 260px; /* Adjust left padding */
+    padding-bottom: 50px;
+    margin-bottom: 45px;
+  }
+  
+  .tmd-container > h1 {
+    color: black;
+    font-size: 48px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-top: 0; /* Remove top margin */
+  }
+  
+  .tmd-container > p {
+    margin-top: 8px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins';
+  }
+  
+  .tmd-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    position: relative;
+  }
+  
+  .tmd-image {
+    width: 80%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    position: relative; /* Remove absolute positioning */
+    z-index: -2; /* Ensure it is behind other content */
+    margin-left: 200px;
+    margin-top: -150px;
+  }

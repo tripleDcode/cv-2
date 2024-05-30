@@ -4,13 +4,6 @@ import '../components/tablethero.css'
 import { lockScroll, unlockScroll } from '../components/lockscroll';
 
 function TabletHero() {
-  useEffect(() => {
-    lockScroll();
-
-    return () => {
-      unlockScroll();
-    };
-  }, []);
 
   return (
     <>

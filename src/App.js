@@ -6,6 +6,10 @@ import WD from './components/pages/wd';
 import GD from './components/pages/GD';
 import MD from './components/pages/MD'
 import TabletSite from './components/TabletSite'
+import TabletWD from './components/TabletWD';
+import TabletMD from './components/TabletMD';
+import TabletGD from './components/TabletGD';
+import TabletDM from './components/TabletDM';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -38,8 +42,12 @@ function App() {
     <>
       {windowWidth <= 975 ? (
         <Router>
-        <TabletSite />
         <Routes>
+          <Route path='/' exact element={<TabletSite />}></Route>
+          <Route path='/web-design' exact element={<TabletWD />}></Route>
+          <Route path='/motion-design' exact element={<TabletMD />}></Route>
+          <Route path='/graphic-design' exact element={<TabletGD />}></Route>
+          <Route path='/digital-marketing' exact element={<TabletDM />}></Route>
         </Routes>
         </Router>
       ) : (
