@@ -2,17 +2,23 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../pages/dm.css'
 import '../../App.css'
+import Navbar from '../navbar'
+import Footer from '../footer'
 
 function DM() {
   return (
     <>
         <div className='dm-container'>
-          <h1>Hi, I'm Dan</h1>
-          <p><mark style={{ backgroundColor: '#1abc9c'}}>Elevate your brand’s online presence with my expert digital marketing skills. With a strategic approach and a deep understanding of the latest trends, I craft tailored marketing campaigns that drive engagement, increase conversions, and boost your ROI.</mark></p>
+        <Navbar animate={false} />
+          <div className='dm-content'>
+          <h1><mark style={{ backgroundColor: '#fff', color: 'black' }}>Hi, I'm Dan</mark></h1>
+          <p><mark style={{ backgroundColor: '#1abc9c'}}>I am a skilled digital marketing professional with expertise in crafting comprehensive marketing strategies that drive engagement and growth. My proficiency spans across various digital channels, including social media, email marketing, and search engine optimization (SEO).</mark></p>
         </div>
-        <div className='digiphoto-holder'>
-            <img src='/digitalmarketing.png' className='digiphoto-image'></img>
+        <div className='dmphoto-holder'>
+            <img src='/digitalmarketing.png' className='dmphoto-image'></img>
             </div>
+            <Footer animate={false}/>
+          </div>
     </>
   )
 }

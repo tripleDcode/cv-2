@@ -3,21 +3,25 @@ import './footer.css';
 import { Button } from '../components/button'
 import { Link } from 'react-router-dom'
 
-function Footer() {
-    const [show, setShow] = useState(false);
+function Footer({ animate }) {
+  const [show, setShow] = useState(false);
 
-    useEffect(() => {
-      // Set a timeout to toggle the visibility of the footer after a delay
-      const timeout = setTimeout(() => {
+  useEffect(() => {
+    let timeout;
+    if (animate) {
+      timeout = setTimeout(() => {
         setShow(true);
-      }, 1000); // Adjust the delay time as needed
-  
-      // Clean up the timeout on component unmount
-      return () => clearTimeout(timeout);
-    }, []);
+      }, 500); // Adjust the delay time as needed
+    } else {
+      setShow(true); // Show navbar immediately if animation is not required
+    }
+
+    // Clean up the timeout on component unmount
+    return () => clearTimeout(timeout);
+  }, [animate]);
 
   return (
-    <div className={`footer-container ${show ? 'show' : ''}`}>
+    <div className={`footer-container ${animate ? 'animate' : ''} ${show ? 'show' : ''}`}>
     <Link to='/digital-marketing'>
       <Button className="btns" buttonStyle='btn--1'>DIGITAL MARKETING</Button>
     </Link>

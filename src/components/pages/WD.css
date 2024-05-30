@@ -1,16 +1,21 @@
 .wd-container {
-  position: relative; /* Positioning context for absolutely positioned elements */
-  height: calc(100vh - 200px); /* Adjusted height to leave space for footer */
-  width: 40%;
+  position: relative;
   display: flex;
+  height: 100dvh;
   flex-direction: column;
   justify-content: flex-end; /* Align content to the bottom */
-  padding-left: 100px; /* Adjust left padding */
-  padding-bottom: 50px;
-  margin-bottom: 45px;
-}
+  }
 
-.wd-container > h1 {
+  .wd-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    padding-left: 100px; /* Adjust left padding */
+    padding-bottom: 100px;
+    width: 40%;
+  }
+
+.wd-content > h1 {
   color: black;
   font-size: 48px;
   font-family: 'Poppins';
@@ -18,7 +23,7 @@
   margin-top: 0; /* Remove top margin */
 }
 
-.wd-container > p {
+.wd-content > p {
   margin-top: 8px;
   color: black;
   font-size: 18px;
@@ -31,7 +36,6 @@
     height: 100vh;
     display: flex;
     justify-content: flex-end; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
     bottom: 0; /* Align at the bottom */
     position: absolute;
     overflow: hidden;
@@ -45,4 +49,5 @@
     width: auto;
     display: block;
     object-fit: cover;
+    bottom: 0;
 }

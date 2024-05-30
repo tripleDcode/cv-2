@@ -9,7 +9,7 @@ function Hero() {
   return (
     <>
     <div className='hero-container'>
-    <Navbar/>
+    <Navbar animate={true}/>
         <div className='hero-content'>
           <h1>Hi, I'm Dan</h1>
           <p>
@@ -18,7 +18,7 @@ Transform your digital presence with my comprehensive skill set in <mark style={
         <div className='photo-holder'>
             <img src='/hero-image.png' className='photo-image'></img>
             </div>
-        <Footer/>
+        <Footer animate={true}/>
         </div>
     </>
   )

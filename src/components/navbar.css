@@ -1,20 +1,22 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    display: block;
-    align-items: center;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 0;
-    z-index: 999;
-    transform: translateY(-100%);
-    transition: transform 1s ease-in-out; /* Transition effect */
-    width: 100%;
-  }
-  
-  .show {
-    transform: translateY(0); /* Move to final position */
-  }
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+  align-items: center;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
 
+.navbar.show {
+  transform: translateY(0) !important; /* Move to final position */
+}
+
+.navbar.animate {
+  transition: transform 1s ease-in-out; /* Transition effect */
+  transform: translateY(-100%);
+}
   .navbar-container {
     display: flex;
     justify-content: space-between;
