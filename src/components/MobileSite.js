@@ -6,7 +6,7 @@ function MobileSite() {
   return (
 <>
     <MobileHero />
-    <MobileMenu animate={true}/>
+    <MobileMenu />
 </>
   )
 }

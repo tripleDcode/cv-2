@@ -5,16 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30dvh;
     width: 100%; /* Ensure it spans the full width */
     bottom: 0;
+    position: fixed; /* Ensure it positions relative to the flow */
 }
-
-.mobile-container.show {
-    transform: translateY(0) !important; /* Move to final position */
-  }
-  
-.mobile-container.animate {
-    transition: transform 1s ease-in-out; /* Transition effect */
-    transform: translateY(100%);
-  }

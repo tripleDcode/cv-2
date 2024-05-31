@@ -5,12 +5,12 @@
   .mobile-buttons {
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    width: 94%;
     justify-content: center;
   }
   
   .m-btn {
-    padding: 4px 28px;
+    padding: 8px 28px;
     font-size: 14px;
     outline: none;
     border: none;
