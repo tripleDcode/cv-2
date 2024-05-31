@@ -11,6 +11,7 @@ import TabletMD from './components/TabletMD';
 import TabletGD from './components/TabletGD';
 import TabletDM from './components/TabletDM';
 import MobileSite from './components/MobileSite';
+import MobileDM from './components/MobileDM';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -43,7 +44,10 @@ function App() {
       <Router>
         <Routes>
           {windowWidth <= 550 ? (
+            <>
             <Route path='/' exact element={<MobileSite />} />
+            <Route path='/digital-marketing' exact element={<MobileDM />} />
+            </>
           ) : windowWidth <= 975 ? (
             <>
               <Route path='/' exact element={<TabletSite />} />
