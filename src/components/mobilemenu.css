@@ -8,4 +8,5 @@
     width: 100%; /* Ensure it spans the full width */
     bottom: 0;
     position: fixed; /* Ensure it positions relative to the flow */
+    overflow: hidden;
 }
