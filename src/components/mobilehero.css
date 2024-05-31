@@ -1,5 +1,5 @@
 .mobile-hero-container {
-  position: relative;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
