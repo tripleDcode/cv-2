@@ -1,0 +1,31 @@
+.mmd-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: calc(100dvh - 198px); /* Full viewport height minus the height of the footer */
+    padding: 10px 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url('/public/motiondesign2.mp4'); /* Use the CSS variable */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: top center; /* Start the image from the top and center horizontally */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  
+      }
+      
+      .mmd-container > h1 {
+        color: black;
+        font-size: 32px;
+        font-family: 'Poppins';
+        font-weight: 700;
+        margin-top: 0; /* Remove top margin */
+      }
+      
+      .mmd-container > p {
+        margin-top: 8px;
+        color: black;
+        font-size: 18px;
+        font-family: 'Poppins';
+      }
+      
