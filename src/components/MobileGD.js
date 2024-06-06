@@ -2,7 +2,7 @@ import React from 'react'
 import Mgd from '../components/mobilepages/mgd'
 import MobileMenu from './mobilemenu'
 
-function MobileDM() {
+function MobileGD() {
   return (
 <>
     <Mgd />
@@ -11,4 +11,4 @@ function MobileDM() {
   )
 }
 
-export default MobileDM
+export default MobileGD

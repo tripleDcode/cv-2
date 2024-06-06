@@ -43,7 +43,12 @@ function Navbar({ animate }) {
                 </li>
                 <li className='nav-item'>
                   <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                    Projects
+                    Skills
+                  </Link>
+                </li>
+                <li className='nav-item'>
+                  <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                    Contact
                   </Link>
                 </li>
               </ul>
