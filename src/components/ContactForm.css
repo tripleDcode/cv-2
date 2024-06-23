@@ -1,0 +1,99 @@
+/* ContactForm.css */
+  
+  .contact-form-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .contact-form, .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+  }
+  
+  .contact-form {
+    height: 60%;
+    background-color: #282828;
+    border-radius: 8px 0px 0px 8px;
+  }
+  
+  .social-media {
+    height: 60%;
+    background-color: #181818;
+    border-radius: 0px 8px 8px 0px ;
+  }
+  
+  .contact-form h2, .social-media h3 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    margin: 10px 0 5px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: #18181800;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+  
+  .contact-form button:hover {
+    background-color: grey;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .social-media li button {
+        width: 100px;
+        height: 50px;
+        color: black;
+        background-color: white;
+        border: none;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 20px;
+  }
+
+  .social-media li button:hover {
+    background-color: grey;
+  }
+  
+  .social-media i {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  

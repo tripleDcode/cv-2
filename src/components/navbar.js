@@ -42,8 +42,8 @@ function Navbar({ animate }) {
                   </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                    Skills
+                  <Link to='/experience' className='nav-links' onClick={closeMobileMenu}>
+                    Experience
                   </Link>
                 </li>
                 <li className='nav-item'>

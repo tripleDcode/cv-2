@@ -1,0 +1,73 @@
+.experience-header {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.experience-header button {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.experience-header button:hover {
+    cursor: pointer;
+    background-color: black 0;
+} 
+
+.experience-container {
+    margin-top: 25px !important;
+    font-family: 'Poppins';
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.experience-container h1 {
+    font-size: 48px;
+    color: black;
+}
+
+.experience-container h2 {
+    color: black
+}
+
+.experience-container h3 {
+    color: black;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.experience-container hr {
+    border: 2px solid black;
+}
+
+.experience-email {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.experience-email p {
+    color: black;
+    margin-left: 10px;
+}
+
+.experience-phone {
+    display: flex;
+    flex-direction: row;
+}
+
+.experience-phone p {
+    color: black;
+    margin-left: 10px;
+}
+

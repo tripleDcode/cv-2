@@ -2,7 +2,7 @@ import React from "react";
 import './sidebutton.css';
 import { Link } from "react-router-dom";
 
-const STYLES = ['sbtn--1', 'sbtn--2', 'sbtn--3', 'sbtn--4'];
+const STYLES = ['sbtn--1', 'sbtn--2', 'sbtn--3', 'sbtn--4', 'sbtn--5'];
 
 
 export const Button = ({

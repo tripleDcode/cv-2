@@ -15,6 +15,8 @@ import MobileDM from './components/MobileDM';
 import MobileGD from './components/MobileGD';
 import MobileMD from './components/MobileMD';
 import MobileWD from './components/MobileWD';
+import Experience from './components/Experience';
+import ContactForm from './components/ContactForm';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -69,6 +71,8 @@ function App() {
               <Route path="/web-design" exact element={<WD />} />
               <Route path="/graphic-design" exact element={<GD />} />
               <Route path="/motion-design" exact element={<MD />} />
+              <Route path="/experience" exact element={<Experience />} />
+              <Route path='/contact' exact element={<ContactForm />} />
             </>
           )}
         </Routes>

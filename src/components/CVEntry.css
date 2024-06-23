@@ -1,0 +1,45 @@
+/* CVEntry.css */
+.cv-entry {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .cv-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: black;
+  }
+  
+  .cv-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: black;
+  }
+  
+  .cv-location{
+    font-weight: bold;
+    color: black;
+  }
+  
+  .cv-dates {
+    color: black;
+  }
+  
+  .cv-responsibilities {
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: black !important;
+  }
+
+  .cv-responsibilities li {
+    color: black;
+  }
+
+.cv-entry h3 {
+    margin-top: 20px !important;
+    font-size: 24px !important;
+  }
+  

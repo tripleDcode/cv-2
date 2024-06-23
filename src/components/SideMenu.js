@@ -26,6 +26,12 @@ const SideMenu = () => {
     <Link to='/motion-design'>
       <Button className="sbtns" buttonStyle='sbtn--4'>MOTION DESIGN</Button>
     </Link>
+    <Link to='/experience'>
+      <Button className="sbtns" buttonStyle='sbtn--5'>EXPERIENCE</Button>
+    </Link>
+    <Link to='/contact'>
+      <Button className="sbtns" buttonStyle='sbtn--5'>CONTACT</Button>
+    </Link>
     </div>
     </div>
     </>

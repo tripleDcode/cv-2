@@ -46,6 +46,11 @@
     transition: all 0.3s ease-out;
   }
 
+  .sbtn--5 {
+    color: #242424;
+    transition: all 0.3s ease-out;
+  }
+
   .s-btn:hover::after {
     content: ''; /* Add pseudo-element */
     position: absolute;
