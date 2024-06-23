@@ -63,6 +63,7 @@ function App() {
               <Route path='/motion-design' exact element={<TabletMD />} />
               <Route path='/graphic-design' exact element={<TabletGD />} />
               <Route path='/digital-marketing' exact element={<TabletDM />} />
+              <Route path='/experience' exact element={<Experience />} />
             </>
           ) : (
             <>
